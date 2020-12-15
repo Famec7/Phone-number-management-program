@@ -1,6 +1,6 @@
 # Phone Number Management Program / 연락처 관리 프로그램
 
-**https://img.shields.io/badge/gcc-6.3.0-brightgreen https://img.shields.io/badge/OS-windows-blue https://img.shields.io/github/issues/LimDongGeon/Phone-number-management-program 	https://img.shields.io/github/forks/LimDongGeon/Phone-number-management-program 	https://img.shields.io/github/stars/LimDongGeon/Phone-number-management-program https://img.shields.io/github/license/LimDongGeon/Phone-number-management-program**  
+**![gcc badge](https://img.shields.io/badge/gcc-6.3.0-brightgreen) ![OS badge](https://img.shields.io/badge/OS-windows-blue) ![issue badge](https://img.shields.io/github/issues/LimDongGeon/Phone-number-management-program) ![forks badge](https://img.shields.io/github/forks/LimDongGeon/Phone-number-management-program)	![stars badge](https://img.shields.io/github/stars/LimDongGeon/Phone-number-management-program) ![license badge](https://img.shields.io/github/license/LimDongGeon/Phone-number-management-program)**  
 One Paragraph of project description goes here / 프로젝트의 전반적인 내용에 대한 요약을 여기에 적습니다
 
 ## Getting Started / 어떻게 시작하나요?
@@ -11,31 +11,53 @@ Put the header directory, src directory and CmakeLists.txt in the same directory
 
 install vscode and Cmake  
 MinGW-W64 GCC-8.1.0  
+OS - Windows
 
 ### Installing / 설치
 
-아래 사항들로 현 프로젝트에 관한 모듈들을 설치할 수 있습니다.
-
 ```
-예시
+no module
 ```
 
 ## Running the tests / 테스트의 실행
 
-어떻게 테스트가 이 시스템에서 돌아가는지에 대한 설명을 합니다
-
-### 테스트는 이런 식으로 동작합니다
-
-왜 이렇게 동작하는지, 설명합니다
+### my_func.h
 
 ```
-예시
+함수 원형선언과 구조체 선언 및 typedef 선언을 한 헤더파일이 담겨 있습니다.
 ```
 
-### 테스트는 이런 식으로 작성하시면 됩니다
+### main.c
 
+```C
+extern TEL **tel_list; //이중 구조체 포인터로 메모리를 저장합니다.(즉, tel_list[0][0], tel_list[1][0] ... 방식으로 메모리 저장)
+
+FILE *fp = fopen("PHONE_BOOK.txt", "w"); // 연락처 정보를 담는 데이터베이스를 메모장 파일로 사용합니다.  
 ```
-예시
+
+### sort.c
+
+```C
+//이름 순으로 정렬하되 삽입정렬을 이용합니다.
+```
+
+### insert.c
+
+```C
+tel_list[count] = (TEL *)malloc(sizeof(TEL));
+if(tel_list[count] == NULL){ //메모리 할당 오류 체크
+  printf("tel_list[count] Memory Error\n");
+  return; //종료
+} //연락처를 저장하기 위한 메모리를 동적할당합니다.
+```
+
+### delete.c
+
+```C
+free(tel_list[i]->name);
+free(tel_list[i]->tel_no);
+free(tel_list[i]->birth);
+free(tel_list[i]); //연락처를 삭제하기 위해 메모리를 해제합니다.(해제 안할 시 memory leak 발생)
 ```
 
 ## Deployment / 배포
@@ -44,19 +66,18 @@ Add additional notes about how to deploy this on a live system / 라이브 시�
 
 ## Built With / 누구랑 만들었나요?
 
-* [이름](링크) - 무엇 무엇을 했어요
-* [Name](Link) - Create README.md
+* 
 
 ## Contributiong / 기여
 
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us. / [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) 를 읽고 이에 맞추어 pull request 를 해주세요.
-
 ## License / 라이센스
-
-This project is licensed under the MIT License - see the [LICENSE.md](https://gist.github.com/PurpleBooth/LICENSE.md) file for details / 이 프로젝트는 MIT 라이센스로 라이센스가 부여되어 있습니다. 자세한 내용은 LICENSE.md 파일을 참고하세요.
 
 ## Acknowledgments / 감사의 말
 
-* Hat tip to anyone whose code was used / 코드를 사용한 모든 사용자들에게 팁
-* Inspiration / 영감
-* etc / 기타
+* exe 파일과 txt파일은 모두 src와 header 디렉터리가 있는 곳에 생성됩니다.(src와 header디렉터리를 같은 디렉터리에 두세요) / 코드를 사용한 모든 사용자들에게 팁
+* University Project
+
+## Impression / 느낀 점
+
+* 동적할당의 개념에 대해 정확히 알 수 있었습니다. (예를 들어, 포인터가 힙영역을 가르키는 것이고, 메모리를 해제한다고 해도 포인터가 없어지는 것이 아닌 힙영역의 메모리가 없어진다.)
+* visual studio가 아닌 vscode에서 작업을 하다보니 빌드 과정에서 자연스럽게 Makefile과 Cmake를 배웠고, 그 과정 속에서 gcc로 컴파일과 링킹을 하는 법을 배웠습니다.(gcc를 접한 후 makefile를 접하다가 Cmake의 존재를 알게 됨)
