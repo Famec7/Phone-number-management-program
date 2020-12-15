@@ -1,6 +1,6 @@
 # Phone Number Management Program / 연락처 관리 프로그램
 
-**![gcc badge](https://img.shields.io/badge/gcc-6.3.0-brightgreen) ![OS badge](https://img.shields.io/badge/OS-windows-blue) ![issue badge](https://img.shields.io/github/issues/LimDongGeon/Phone-number-management-program) ![forks badge](https://img.shields.io/github/forks/LimDongGeon/Phone-number-management-program)	![stars badge](https://img.shields.io/github/stars/LimDongGeon/Phone-number-management-program) ![license badge](https://img.shields.io/github/license/LimDongGeon/Phone-number-management-program)**  
+**![gcc badge](https://img.shields.io/badge/gcc-6.3.0-brightgreen) ![OS badge](https://img.shields.io/badge/OS-windows-blue) ![IDE badge](https://img.shields.io/badge/IDE-vscode-blue) ![issue badge](https://img.shields.io/github/issues/LimDongGeon/Phone-number-management-program) ![forks badge](https://img.shields.io/github/forks/LimDongGeon/Phone-number-management-program)	![stars badge](https://img.shields.io/github/stars/LimDongGeon/Phone-number-management-program) ![license badge](https://img.shields.io/github/license/LimDongGeon/Phone-number-management-program)**  
 
 ## Getting Started / 어떻게 시작하나요?
 
