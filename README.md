@@ -1,7 +1,6 @@
 # Phone Number Management Program / 연락처 관리 프로그램
 
 **![gcc badge](https://img.shields.io/badge/gcc-6.3.0-brightgreen) ![OS badge](https://img.shields.io/badge/OS-windows-blue) ![issue badge](https://img.shields.io/github/issues/LimDongGeon/Phone-number-management-program) ![forks badge](https://img.shields.io/github/forks/LimDongGeon/Phone-number-management-program)	![stars badge](https://img.shields.io/github/stars/LimDongGeon/Phone-number-management-program) ![license badge](https://img.shields.io/github/license/LimDongGeon/Phone-number-management-program)**  
-One Paragraph of project description goes here / 프로젝트의 전반적인 내용에 대한 요약을 여기에 적습니다
 
 ## Getting Started / 어떻게 시작하나요?
 
@@ -66,7 +65,7 @@ Add additional notes about how to deploy this on a live system / 라이브 시�
 
 ## Built With / 누구랑 만들었나요?
 
-* 
+* alone
 
 ## Contributiong / 기여
 
@@ -74,7 +73,7 @@ Add additional notes about how to deploy this on a live system / 라이브 시�
 
 ## Acknowledgments / 감사의 말
 
-* exe 파일과 txt파일은 모두 src와 header 디렉터리가 있는 곳에 생성됩니다.(src와 header디렉터리를 같은 디렉터리에 두세요) / 코드를 사용한 모든 사용자들에게 팁
+* exe 파일과 txt파일은 모두 src와 header 디렉터리가 있는 곳에 생성됩니다.(src와 header디렉터리를 같은 디렉터리에 두세요)
 * University Project
 
 ## Impression / 느낀 점
