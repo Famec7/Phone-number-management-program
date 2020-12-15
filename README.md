@@ -80,3 +80,4 @@ Add additional notes about how to deploy this on a live system / 라이브 시�
 
 * 동적할당의 개념에 대해 정확히 알 수 있었습니다. (예를 들어, 포인터가 힙영역을 가르키는 것이고, 메모리를 해제한다고 해도 포인터가 없어지는 것이 아닌 힙영역의 메모리가 없어진다.)
 * visual studio가 아닌 vscode에서 작업을 하다보니 빌드 과정에서 자연스럽게 Makefile과 Cmake를 배웠고, 그 과정 속에서 gcc로 컴파일과 링킹을 하는 법을 배웠습니다.(gcc를 접한 후 makefile를 접하다가 Cmake의 존재를 알게 됨)
+* 분리 컴파일을 배우다보니 변수의 생명주기에 대해 자세히 알 수 있었습니다.
