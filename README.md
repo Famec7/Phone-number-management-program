@@ -1,19 +1,16 @@
 # Phone Number Management Program / 연락처 관리 프로그램
 
-**[뱃지나 프로젝트에 관한 이미지들이 이 위치에 들어가면 좋습니다]**  
+**https://img.shields.io/badge/gcc-6.3.0-brightgreen https://img.shields.io/badge/OS-windows-blue https://img.shields.io/github/issues/LimDongGeon/Phone-number-management-program 	https://img.shields.io/github/forks/LimDongGeon/Phone-number-management-program 	https://img.shields.io/github/stars/LimDongGeon/Phone-number-management-program https://img.shields.io/github/license/LimDongGeon/Phone-number-management-program**  
 One Paragraph of project description goes here / 프로젝트의 전반적인 내용에 대한 요약을 여기에 적습니다
 
 ## Getting Started / 어떻게 시작하나요?
 
-이 곳에서 설치에 관련된 이야기를 해주시면 좋습니다.
+Put the header directory, src directory and CmakeLists.txt in the same directory and build  
 
 ### Prerequisites / 선행 조건
 
-아래 사항들이 설치가 되어있어야합니다.
-
-```
-예시
-```
+install vscode and Cmake  
+MinGW-W64 GCC-8.1.0  
 
 ### Installing / 설치
 
